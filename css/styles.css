@@ -6,6 +6,7 @@
   --third-color: #ffffff;
   --background-main-footer: #2f303a;
   --focus-color: #2196f3;
+  --white-color: #f5f5f5;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -38,8 +39,8 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 .list {
@@ -70,15 +71,6 @@ ul {
 .header,
 .background-photo {
   background-color: var(--third-color);
-}
-.background-about {
-  background-color: #f5f4fa;
-}
-
-.background-peculiarities,
-.background-works,
-.background-portfolio {
-  color: #f5f5f5;
 }
 
 /*HEADER*/
@@ -176,7 +168,6 @@ ul {
   color: var(--third-color);
   background-color: var(--focus-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   cursor: pointer;
 }
 .button:hover,
@@ -185,10 +176,12 @@ ul {
 }
 
 /* Our peculiarities */
-
+.section-peculiarities{
+  color: var(--white-color);
+  padding-top: 94px;
+}
 .peculiarities-list {
   display: flex;
-  padding-top: 94px;
 }
 .list-item {
   width: 270px;
@@ -215,11 +208,12 @@ ul {
   color: var(--second-color);
 }
 /* About */
-
-.about {
+.about-works{
+  color: var(--white-color);
   padding-top: 94px;
-  padding-bottom: 50px;
-
+}
+.about {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -229,16 +223,18 @@ ul {
 }
 .about-photo {
   display: flex;
-  padding-bottom: 94px;
 }
 .about-photo-item:not(:last-child) {
   margin-right: 30px;
 }
 /* Our team */
-
+.background-about {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .team-list {
   display: flex;
-  padding-bottom: 94px;
 }
 .about-team {
   align-items: center;
@@ -259,15 +255,22 @@ ul {
   color: var(--main-color);
 }
 .our-team-item {
+  padding-bottom: 30px;
   font-weight: 400;
   color: var(--second-color);
 }
 
 /*HERO PORTFOLIO*/
+.background-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  color: var(--white-color)
+}
 .btn-list{
   display:flex;
-  padding-top: 94px;
   justify-content: center;
+  margin-bottom: 50px;
   
 }
 .main-btn {
@@ -299,8 +302,7 @@ ul {
   display:flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-top: 50px;
-  padding-bottom: 94px;
+  
 }
 
 .portfolio{
@@ -326,11 +328,8 @@ ul {
 
 
 /*FOOTER*/
-.footer-container {
-  padding-top: 60px;
-}
+
 .footer-item-adress {
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 .footer-item-mail {
@@ -338,6 +337,8 @@ ul {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-main-footer);
 }
 .second-part {
@@ -356,5 +357,6 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 .font-style {
+  margin-top: 20px;
   font-style: normal;
 }
