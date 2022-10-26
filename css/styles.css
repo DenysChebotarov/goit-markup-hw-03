@@ -75,7 +75,7 @@ ul {
 
 /*HEADER*/
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -84,7 +84,6 @@ ul {
 .header-nav {
   display: flex;
   align-items: center;
-  margin-right: 344px;
 }
 .header-nav-list {
   display: flex;
@@ -93,6 +92,7 @@ ul {
 .header-contacts-list {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 .header-contacts-item {
   margin-right: 50px;
@@ -211,6 +211,7 @@ ul {
 .about-works{
   color: var(--white-color);
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .about {
   margin-bottom: 50px;
@@ -239,6 +240,7 @@ ul {
 .about-team {
   align-items: center;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .photo-item:not(:last-child) {
   margin-right: 30px;
@@ -255,7 +257,6 @@ ul {
   color: var(--main-color);
 }
 .our-team-item {
-  padding-bottom: 30px;
   font-weight: 400;
   color: var(--second-color);
 }
@@ -271,8 +272,10 @@ ul {
   display:flex;
   justify-content: center;
   margin-bottom: 50px;
-  
-}
+  }
+.btn-item:not(:last-child){
+margin-right: 8px;
+}  
 .main-btn {
   padding: 6px 22px;
   border-radius: 4px;
@@ -287,9 +290,7 @@ ul {
   cursor: pointer;
   background-color: #f5f4fa;
 }
-.btn{
-  margin-right: 8px;
-}
+
   
 
 .main-btn:hover,
